@@ -12,3 +12,4 @@
 */
 
 Route::get('/partnership', 'PagesController@partnership');
+Route::get('/feedback', 'PagesController@feedback');
