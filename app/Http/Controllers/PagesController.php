@@ -13,7 +13,7 @@ class PagesController extends Controller
 	}
     public function feedback(){
 
-    	return view('feedback');
+    	return view('form.feedback');
 
     }
 
