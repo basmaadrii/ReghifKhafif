@@ -3,58 +3,58 @@
 
 <h1 style= "color : Black;"><strong>Give Us Your FeedBack<strong/></h1>
 
-{!! Form::open()!!}
+{!! Form::open(['url'=>/'feedback'])!!}
 {!! Form::label('Quality','Quality of Food')!!}
-{!! Form::radio('poor','Poor')!!}
+{!! Form::radio('poorquality','Poor')!!}
 {!! Form::label('poor','Poor')!!}
-{!! Form::radio('Good','Good')!!}
+{!! Form::radio('Goodquality','Good')!!}
 {!! Form::label('Good','Good')!!}
-{!! Form::radio('Excellent','Excellent')!!}
+{!! Form::radio('Excellentquality','Excellent')!!}
 {!! Form::label('Excellent','Excellent')!!}
 <br/>
 
 {!! Form::label('Service ','Service Efficiency')!!}
-{!! Form::radio('poor','Poor')!!}
+{!! Form::radio('poorservice','Poor')!!}
 {!! Form::label('poor','Poor')!!}
-{!! Form::radio('Good','Good')!!}
+{!! Form::radio('Goodservice','Good')!!}
 {!! Form::label('Good','Good')!!}
-{!! Form::radio('Excellent','Excellent')!!}
+{!! Form::radio('Excellentservice','Excellent')!!}
 {!! Form::label('Excellent','Excellent')!!}
 <br/>
 
 {!! Form::label('Cleanliness','Cleanliness')!!}
-{!! Form::radio('poor','Poor')!!}
+{!! Form::radio('poorcleanliness','Poor')!!}
 {!! Form::label('poor','Poor')!!}
-{!! Form::radio('Good','Good')!!}
+{!! Form::radio('Goodcleanliness','Good')!!}
 {!! Form::label('Good','Good')!!}
-{!! Form::radio('Excellent','Excellent')!!}
+{!! Form::radio('Excellentcleanliness','Excellent')!!}
 {!! Form::label('Excellent','Excellent')!!}
  <br/>
 
 {!! Form::label('Speed','Speed Of Service')!!}
-{!! Form::radio('poor','Poor')!!}
+{!! Form::radio('poorspeed','Poor')!!}
 {!! Form::label('poor','Poor')!!}
-{!! Form::radio('Good','Good')!!}
+{!! Form::radio('Goodspeed','Good')!!}
 {!! Form::label('Good','Good')!!}
-{!! Form::radio('Excellent','Excellent')!!}
+{!! Form::radio('Excellentspeed','Excellent')!!}speed
 {!! Form::label('Excellent','Excellent')!!}
 <br/>
 
 {!! Form::label('Value','Value For Money')!!}
-{!! Form::radio('poor','Poor')!!}
+{!! Form::radio('poorvalue','Poor')!!}
 {!! Form::label('poor','Poor')!!}
-{!! Form::radio('Good','Good')!!}
+{!! Form::radio('Goodvalue','Good')!!}
 {!! Form::label('Good','Good')!!}
-{!! Form::radio('Excellent','Excellent')!!}
+{!! Form::radio('Excellentvalue','Excellent')!!}
 {!! Form::label('Excellent','Excellent')!!}
 <br/>
 
 {!! Form::label('Staff','Staff Attitude')!!}
-{!! Form::radio('poor','Poor')!!}
+{!! Form::radio('poorstaff','Poor')!!}
 {!! Form::label('poor','Poor')!!}
-{!! Form::radio('Good','Good')!!}
+{!! Form::radio('Goodstaff','Good')!!}
 {!! Form::label('Good','Good')!!}
-{!! Form::radio('Excellent','Excellent')!!}
+{!! Form::radio('Excellentstaff','Excellent')!!}
 {!! Form::label('Excellent','Excellent')!!}
 <br/>
 

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
 
 class PagesController extends Controller
 {
@@ -11,6 +11,16 @@ class PagesController extends Controller
 		return view('form.partnership');
 
 	}
+
+	public function feedbackstore(){
+
+
+	}
+
+
+
+
+
     public function feedback(){
 
     	return view('form.feedback');

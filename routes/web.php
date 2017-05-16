@@ -14,3 +14,5 @@
 Route::get('/',function(){return view('welcome');});
 Route::get('/partnership', 'PagesController@partnership');
 Route::get('/feedback', 'PagesController@feedback');
+
+Route::post('/feedback', 'PagesController@storefeedback');
