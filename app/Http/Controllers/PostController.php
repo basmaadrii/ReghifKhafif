@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
+use App\post;
+use Carbon\Carbon;
 
 class PostController extends Controller
 {
@@ -11,7 +13,7 @@ class PostController extends Controller
     }
 
      public function store(){
-     	
-
+	    $published_at = Carbon::now();
+	    post::create(Request::all(), $published_at);
      }
 }
