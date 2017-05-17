@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
+use App\Partner;
 
 class PartnershipController extends Controller
 {
@@ -13,7 +14,8 @@ class PartnershipController extends Controller
     }
     
 	public function store(){
-
+		dd(Request::all());
+		Partner::create(Request::all());
 
 	}
 }
