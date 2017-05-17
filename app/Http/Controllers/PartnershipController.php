@@ -14,7 +14,7 @@ class PartnershipController extends Controller
     }
     
 	public function store(){
-		dd(Request::all());
+
 		Partner::create(Request::all());
 
 	}

@@ -16,6 +16,5 @@ class Partner extends Model
     	'phonenumber',
     	'offer',
     	'additionalInfo'
-
     ];
 }

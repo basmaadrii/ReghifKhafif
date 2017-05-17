@@ -19,7 +19,7 @@
 						<div class="form-group">
 							{!! Form::label('name', 'Name', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								{!! Form::text('nameText', null, ['class' => 'form-control']) !!}
+								{!! Form::text('name', null, ['class' => 'form-control']) !!}
 								<br/>
 							</div>
 						</div>
@@ -27,7 +27,7 @@
 						<div class="form-group">
 							{!! Form::label('email', 'Email', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								{!! Form::text('emailText', null, ['class' => 'form-control']) !!}
+								{!! Form::text('email', null, ['class' => 'form-control']) !!}
 								<br/>
 							</div>
 						</div>
@@ -35,7 +35,7 @@
 						<div class="form-group">
 							{!! Form::label('address ', 'Address', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								{!! Form::text('addressText', null, ['class' => 'form-control']) !!}
+								{!! Form::text('address', null, ['class' => 'form-control']) !!}
 								<br/>
 							</div>
 						</div>
@@ -43,7 +43,7 @@
 						<div class="form-group">
 							{!! Form::label('phonenumber', 'Phone Number', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-							    {!! Form::text('phonenumberText', null, ['class' => 'form-control']) !!}
+							    {!! Form::text('phonenumber', null, ['class' => 'form-control']) !!}
 								<br/>
 							</div>
 						</div>
@@ -51,15 +51,15 @@
 						<div class="form-group">
 							{!! Form::label('offer', 'Offer', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								{!! Form::textarea('offerText', null, ['class' => 'form-control']) !!}
+								{!! Form::textarea('offer', null, ['class' => 'form-control']) !!}
 								<br/>
 							</div>
 						</div>
 
 						<div class="form-group">
-							{!! Form::label('additionalinfo', 'Additional Information', ['class' => 'col-md-4 control-label']) !!}
+							{!! Form::label('additionalInfo', 'Additional Information', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
-								{!! Form::textarea('additionalinfoText', null, ['class' => 'form-control']) !!}
+								{!! Form::textarea('additionalInfo', null, ['class' => 'form-control']) !!}
 								<br/>
 							</div>
 						</div>
