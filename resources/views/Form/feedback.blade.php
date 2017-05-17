@@ -117,7 +117,7 @@
 						<div class="form-group">
 						{!! Form::label('comment','Aditional Comments')!!}
 						<br/>
-						{!! Form::textarea('comments',null )!!}
+						{!! Form::textarea('comments',null)!!}
 						<br/>
 						{!! Form::submit('Submit', ['class' => 'btn btn-primary'])!!}
 						</div>

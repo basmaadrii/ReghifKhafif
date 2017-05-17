@@ -10,10 +10,13 @@
 				<br/>
 				<div class="panel-body">
 				{!! Form::open(['url' => 'post', 'files' => true])!!}
-					{!! Form::textarea('text',null )!!}
+					{!! Form::textarea('text', null)!!}
 					<br/>
-					{!! Form::file('image') !!}
-					{!! Form::submit('Submit', ['class' => 'btn btn-primary'])!!}
+					<hr/>
+					{!! Form::label('uploadLabel', 'Upload Photo', ['class' => ' control-label']) !!}
+					{!! Form::file('image', ['class' => 'btn btn-file']) !!}
+					<br/>
+					{!! Form::submit('Submit', ['class' => 'col-md-offset-2 btn btn-primary'])!!}
 				{!! Form::close()!!}
 				</div>
 			</div>
