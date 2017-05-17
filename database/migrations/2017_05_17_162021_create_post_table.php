@@ -17,7 +17,7 @@ class CreatePostTable extends Migration
             $table->increments('id');
             $table->string('text');
             $table->timestamp('published_at');
-            $table->binary('image') ;
+            $table->binary('image');
             $table->timestamps();
         });
     }
