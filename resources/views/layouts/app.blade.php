@@ -77,7 +77,16 @@
                 </div>
             </div>
         </nav>
-
+            <ul class="nav nav-tabs">
+          <li class="active"><a href="#">Home</a></li>
+          <li>
+            <a href="/menu">Menu</a>
+          </li>
+          <li><a href="/feedback">Feedbacks</a></li>
+          <li><a href="/partnership">Partnership</a></li>
+        </ul>
+        </br>
+        </br>
         @yield('content')
     </div>
 
