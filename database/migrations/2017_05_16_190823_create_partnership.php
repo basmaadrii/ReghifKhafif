@@ -14,13 +14,14 @@ class CreatePartnership extends Migration
     public function up()
     {
         Schema::create('partnership', function(Blueprint $table) {
+            $table->increments('id');
             $table->string('name');
             $table->string('email');
-            $table->string('address');
-            $table->string('phonenumber');
+            $table->string('address')->nullable();
+            $table->string('phonenumber')->nullable();
             $table->text('offer');
-            $table->text('additionalInfo');
-            $table->increments('id');
+            $table->text('additionalInfo')->nullable();
+            $table->binary('documentaion');
             $table->timestamps();
         });
     }

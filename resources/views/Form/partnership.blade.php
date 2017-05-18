@@ -16,18 +16,32 @@
 
 	                    {{ csrf_field() }}
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
 							{!! Form::label('name', 'Name', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
 								{!! Form::text('name', null, ['class' => 'form-control']) !!}
+
+								@if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+
 								<br/>
 							</div>
 						</div>
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
 							{!! Form::label('email', 'Email', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
 								{!! Form::text('email', null, ['class' => 'form-control']) !!}
+
+								@if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+
 								<br/>
 							</div>
 						</div>
@@ -48,10 +62,17 @@
 							</div>
 						</div>
 
-						<div class="form-group">
-							{!! Form::label('offer', 'Offer', ['class' => 'col-md-4 control-label']) !!}
+						<div class="form-group{{ $errors->has('offer') ? ' has-error' : '' }}">
+							{!! Form::label('offer', 'Describe Your Offer', ['class' => 'col-md-4 control-label']) !!}
 							<div class="col-md-6">
 								{!! Form::textarea('offer', null, ['class' => 'form-control']) !!}
+
+								@if ($errors->has('offer'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('offer') }}</strong>
+                                    </span>
+                                @endif
+
 								<br/>
 							</div>
 						</div>
@@ -62,6 +83,20 @@
 								{!! Form::textarea('additionalInfo', null, ['class' => 'form-control']) !!}
 								<br/>
 							</div>
+						</div>
+
+						<div class="form-group{{ $errors->has('documentation') ? ' has-error' : '' }}">
+							<hr/>
+							{!! Form::label('uploadLabel', 'Add Documentation', ['class' => ' control-label col-md-4']) !!}
+							{!! Form::file('documentation', ['class' => 'btn btn-file']) !!}
+
+								@if ($errors->has('documentation'))
+                                    <span class="help-block col-md-offset-4">
+                                        <strong>{{ $errors->first('documentation') }}</strong>
+                                    </span>
+                                @endif
+
+							<br/>
 						</div>
 
 						<div class="form-group">
