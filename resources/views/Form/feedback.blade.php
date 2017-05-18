@@ -1,4 +1,4 @@
-@extends('layouts.app')
+       @extends('layouts.app')
 @section('content')
 
 
@@ -15,15 +15,15 @@
 						<div class="form-group">
 							{!! Form::label('qualitylabel','Quality of Food', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
-								{!! Form::radio('quality','Poor')!!}
+								{!! Form::radio('Quality','Poor')!!}
 								{!! Form::label('poor','Poor', ['class' => ' control-label'])!!}
 							</div>
 							<div class="col-md-2">
-								{!! Form::radio('quality','Good')!!}
+								{!! Form::radio('Quality','Good')!!}
 								{!! Form::label('Good','Good', ['class' => 'control-label'])!!}
 							</div>
 							<div class="col-md-2">
-								{!! Form::radio('quality','Excellent')!!}
+								{!! Form::radio('Quality','Excellent')!!}
 								{!! Form::label('Excellent','Excellent', ['class' => 'control-label'])!!}
 							</div>
 							<br/>
@@ -32,15 +32,15 @@
 						<div class="form-group">
 							{!! Form::label('ServiceLabel','Service Efficiency', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
-							{!! Form::radio('Service ','Poor')!!}
+							{!! Form::radio('ServiceEfficiency','Poor')!!}
 							{!! Form::label('poor','Poor', ['class' => ' control-label'])!!}
 							</div>
 							<div class="col-md-2">
-							{!! Form::radio('Service ','Good')!!}
+							{!! Form::radio('ServiceEfficiency','Good')!!}
 							{!! Form::label('Good','Good', ['class' => ' control-label'])!!}
 							</div>
 							<div class="col-md-2">	
-							{!! Form::radio('Service ','Excellent')!!}
+							{!! Form::radio('ServiceEfficiency','Excellent')!!}
 							{!! Form::label('Excellent','Excellent', ['class' => ' control-label'])!!}
 							</div>
 							<br/>
@@ -49,15 +49,15 @@
 						<div class="form-group">
 							{!! Form::label('CleanlinessLabel','Cleanliness', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
-							{!! Form::radio('Cleanliness','Poor')!!}
+							{!! Form::radio('cleanliness','Poor')!!}
 							{!! Form::label('poor','Poor', ['class' => ' control-label'])!!}
 							</div>
 							<div class="col-md-2">
-							{!! Form::radio('Cleanliness','Good')!!}
+							{!! Form::radio('cleanliness','Good')!!}
 							{!! Form::label('Good','Good', ['class' => 'control-label'])!!}
 							</div>
 							<div class="col-md-2">
-							{!! Form::radio('Cleanliness','Excellent')!!}
+							{!! Form::radio('cleanliness','Excellent')!!}
 							{!! Form::label('Excellent','Excellent', ['class' => ' control-label'])!!}
 							</div>
 							 <br/>
@@ -66,15 +66,15 @@
 						<div class="form-group">
 							{!! Form::label('SpeedLabel','Speed Of Service', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
-							{!! Form::radio('Speed','Poor')!!}
+							{!! Form::radio('speedofservice','Poor')!!}
 							{!! Form::label('poor','Poor', ['class' =>  'control-label'])!!}
 							</div>
 							<div class="col-md-2">
-							{!! Form::radio('Speed','Good')!!}
+							{!! Form::radio('speedofservice','Good')!!}
 							{!! Form::label('Good','Good', ['class' => ' control-label'])!!}
 							</div>
 							<div class="col-md-2">
-							{!! Form::radio('Speed','Excellent')!!}
+							{!! Form::radio('speedofservice','Excellent')!!}
 							{!! Form::label('Excellent','Excellent', ['class' => 'control-label'])!!}
 							</div>
 							<br/>
@@ -83,15 +83,15 @@
 						<div class="form-group">
 							{!! Form::label('ValueLabel','Value For Money', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">	
-							{!! Form::radio('Value','Poor')!!}
+							{!! Form::radio('valueformoney','Poor')!!}
 							{!! Form::label('poor','Poor', ['class' =>  'control-label'])!!}
 							</div>
 							<div class="col-md-2">	
-							{!! Form::radio('Value','Good')!!}
+							{!! Form::radio('valueformoney','Good')!!}
 							{!! Form::label('Good','Good', ['class' =>  'control-label'])!!}
 							</div>
 							<div class="col-md-2">	
-							{!! Form::radio('Value','Excellent')!!}
+							{!! Form::radio('valueformoney','Excellent')!!}
 							{!! Form::label('Excellent','Excellent', ['class' => ' control-label'])!!}
 							</div>
 							<br/>
@@ -100,15 +100,15 @@
 						<div class="form-group">
 							{!! Form::label('StaffLabel','Staff Attitude', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">	
-							{!! Form::radio('Staff','Poor')!!}
+							{!! Form::radio('staffattitude','Poor')!!}
 							{!! Form::label('poor','Poor', ['class' => ' control-label'])!!}
 							</div>
 							<div class="col-md-2">	
-							{!! Form::radio('Staff','Good')!!}
+							{!! Form::radio('staffattitude','Good')!!}
 							{!! Form::label('Good','Good', ['class' => 'control-label'])!!}
 							</div>
 							<div class="col-md-2">	
-							{!! Form::radio('Staff','Excellent')!!}
+							{!! Form::radio('staffattitude','Excellent')!!}
 							{!! Form::label('Excellent','Excellent', ['class' => 'control-label'])!!}
 							</div>
 							<br/>
@@ -117,7 +117,11 @@
 						<div class="form-group">
 						{!! Form::label('comment','Aditional Comments')!!}
 						<br/>
+<<<<<<< HEAD
+						{!! Form::textarea('additionalcomment',null )!!}
+=======
 						{!! Form::textarea('comments',null)!!}
+>>>>>>> origin/master
 						<br/>
 						{!! Form::submit('Submit', ['class' => 'btn btn-primary'])!!}
 						</div>
