@@ -16,3 +16,7 @@ Route::post('/feedback', 'FeedbackController@store');
 
 Route::get('/post', 'PostController@display');
 Route::post('/post', 'PostController@store');
+
+Route::get('/menue', 'PagesController@displayMenue');
+Route::get('/contact', 'PagesController@displayContact');
+
