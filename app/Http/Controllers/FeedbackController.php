@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Request;
 
+use Request;
+use App\Feedback;
 class FeedbackController extends Controller
 {
 
@@ -15,7 +16,11 @@ class FeedbackController extends Controller
     
 	public function store(){
 
+		Feedback::create( Request::all());
 
+
+
+		
 
 
 	}

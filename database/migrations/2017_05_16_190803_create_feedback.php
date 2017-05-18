@@ -16,12 +16,12 @@ class CreateFeedback extends Migration
         Schema::create('feedback', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->integer('Quality');
-            $table->integer('ServiceEfficiency');
-            $table->integer('cleanliness');
-            $table->integer('speedofservice');
-            $table->integer('valueformoney');
-            $table->integer('staffattitude');
+            $table->string('Quality');
+            $table->string('ServiceEfficiency');
+            $table->string('cleanliness');
+            $table->string('speedofservice');
+            $table->string('valueformoney');
+            $table->string('staffattitude');
             $table->text('additionalcomment');
         });
     }
