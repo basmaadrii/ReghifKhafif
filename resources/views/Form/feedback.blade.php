@@ -12,7 +12,7 @@
 
 					{!! Form::open(['url' => 'feedback'])!!}
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('Quality') ? ' has-error' : '' }}">
 							{!! Form::label('qualitylabel','Quality of Food', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
 								{!! Form::radio('Quality','Poor')!!}
@@ -27,9 +27,15 @@
 								{!! Form::label('Excellent','Excellent', ['class' => 'control-label'])!!}
 							</div>
 							<br/>
+							@if ($errors->has('Quality'))
+                                    <span class="help-block ">
+                                        <strong>{{ $errors->first('Quality') }}</strong>
+                                    </span>
+
+                                @endif
 						</div>
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('ServiceEfficiency') ? ' has-error' : '' }}">
 							{!! Form::label('ServiceLabel','Service Efficiency', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
 							{!! Form::radio('ServiceEfficiency','Poor')!!}
@@ -44,9 +50,15 @@
 							{!! Form::label('Excellent','Excellent', ['class' => ' control-label'])!!}
 							</div>
 							<br/>
+							@if ($errors->has('ServiceEfficiency'))
+                                    <span class="help-block " >
+                                        <strong>{{ $errors->first('ServiceEfficiency') }}</strong>
+                                    </span>
+                                 
+                                @endif
 						</div>
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('cleanliness') ? ' has-error' : '' }}">
 							{!! Form::label('CleanlinessLabel','Cleanliness', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
 							{!! Form::radio('cleanliness','Poor')!!}
@@ -61,9 +73,14 @@
 							{!! Form::label('Excellent','Excellent', ['class' => ' control-label'])!!}
 							</div>
 							 <br/>
+							 @if ($errors->has('cleanliness'))
+                                    <span class="help-block ">
+                                        <strong>{{ $errors->first('cleanliness') }}</strong>
+                                    </span>
+                                @endif
 						</div>
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('speedofservice') ? ' has-error' : '' }}">
 							{!! Form::label('SpeedLabel','Speed Of Service', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">
 							{!! Form::radio('speedofservice','Poor')!!}
@@ -78,9 +95,14 @@
 							{!! Form::label('Excellent','Excellent', ['class' => 'control-label'])!!}
 							</div>
 							<br/>
+							@if ($errors->has('speedofservice'))
+                                    <span class="help-block ">
+                                        <strong>{{ $errors->first('speedofservice') }}</strong>
+                                    </span>
+                                @endif
 						</div>
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('valueformoney') ? ' has-error' : '' }}">
 							{!! Form::label('ValueLabel','Value For Money', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">	
 							{!! Form::radio('valueformoney','Poor')!!}
@@ -95,9 +117,14 @@
 							{!! Form::label('Excellent','Excellent', ['class' => ' control-label'])!!}
 							</div>
 							<br/>
+							@if ($errors->has('valueformoney'))
+                                    <span class="help-block ">
+                                        <strong>{{ $errors->first('valueformoney') }}</strong>
+                                    </span>
+                                @endif
 						</div>
 
-						<div class="form-group">
+						<div class="form-group{{ $errors->has('staffattitude') ? ' has-error' : '' }}">
 							{!! Form::label('StaffLabel','Staff Attitude', ['class' => 'col-md-4 control-label'])!!}
 							<div class="col-md-2">	
 							{!! Form::radio('staffattitude','Poor')!!}
@@ -112,16 +139,21 @@
 							{!! Form::label('Excellent','Excellent', ['class' => 'control-label'])!!}
 							</div>
 							<br/>
+							@if ($errors->has('staffattitude'))
+                                    <span class="help-block ">
+                                        <strong>{{ $errors->first('staffattitude') }}</strong>
+                                    </span>
+                                @endif
 						</div>
 
 						<div class="form-group">
 						{!! Form::label('comment','Aditional Comments')!!}
 						<br/>
-<<<<<<< HEAD
+
 						{!! Form::textarea('additionalcomment',null )!!}
-=======
-						{!! Form::textarea('comments',null)!!}
->>>>>>> origin/master
+
+						
+
 						<br/>
 						{!! Form::submit('Submit', ['class' => 'btn btn-primary'])!!}
 						</div>
