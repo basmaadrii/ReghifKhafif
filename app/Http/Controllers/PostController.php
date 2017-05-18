@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Request;
+use App\Http\Requests;
+use App\Http\Requests\PostRequest;
+
 use App\post;
 use Carbon\Carbon;
 
@@ -12,8 +14,9 @@ class PostController extends Controller
     	return view('form.postform');
     }
 
-     public function store(){
+     public function store(PostRequest $request){
 	    $published_at = Carbon::now();
-	    post::create(Request::all(), $published_at);
+	    post::create($request->all(), $published_at);
+	    return redirect('post');
      }
 }
