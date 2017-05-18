@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    public function displayMenue()
+    public function displayMenu()
     {
-    	return view('pages.menue');
+    	return view('pages.menu');
     }
 
  	public function displayContact()
