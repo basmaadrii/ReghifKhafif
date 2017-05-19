@@ -18,13 +18,7 @@ class FeedbackController extends Controller
 	public function store(FeedbackRequest $request){
 
 		Feedback::create( $request->all());
-		return redirect('Feedback');
-
-
-
-		
-
-
+		return redirect('feedback');
 	}
 
 }

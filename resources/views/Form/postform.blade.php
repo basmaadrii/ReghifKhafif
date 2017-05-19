@@ -18,7 +18,7 @@
                                     <span class="help-block">
                                         <strong>{{ $errors->first('text') }}</strong>
                                     </span>
-                                @endif
+                       @endif
 					<hr/>
 					</div>
 					{!! Form::label('uploadLabel', 'Upload Photo', ['class' => ' control-label']) !!}

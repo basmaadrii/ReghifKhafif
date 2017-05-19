@@ -12,4 +12,7 @@ class post extends Model
  	'published_at',
   ];
 
+  public function user(){
+  	return $this->belongsTo('App\User');
+  }
 }

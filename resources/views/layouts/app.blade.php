@@ -83,6 +83,7 @@
           <li>
             <a href="/menu">Menu</a>
           </li>
+          <li><a href="/newsfeed">News Feed</a></li>
           <li><a href="/feedback">Feedbacks</a></li>
           <li><a href="/partnership">Partnership</a></li>
           <li><a href="/post">Post</a></li>
