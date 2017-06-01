@@ -18,7 +18,7 @@ class CreatePostTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('text');
             $table->timestamp('published_at');
-            $table->binary('image')->nullable();
+            $table->string('image')->nullable();
             $table->foreign('user_id')
                     ->references('id')
                     ->on('users')

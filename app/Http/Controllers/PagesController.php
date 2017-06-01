@@ -17,9 +17,9 @@ class PagesController extends Controller
     	return view('pages.contact');
     }
 
-
-    public function newsfeed(){
-    	$posts = Post::all();
+    public function newsfeed()
+    {
+    	$posts = Post::latest('published_at')->get();
     	return view('pages.newsfeed', compact('posts'));
     }
 }
