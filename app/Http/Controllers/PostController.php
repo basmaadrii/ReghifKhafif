@@ -25,7 +25,7 @@ class PostController extends Controller
 
         if($request->hasFile('image')){
             $ext = $post->image->getClientOriginalExtension();
-            $filename = 'posts/photo'.rand(11111,99999).'.'.$ext;
+            $filename = 'posts/photo'.rand(111111, 999999).'.'.$ext;
             Storage::disk('public')->put($filename, file($post->image));
             $post->image = $filename;
         }

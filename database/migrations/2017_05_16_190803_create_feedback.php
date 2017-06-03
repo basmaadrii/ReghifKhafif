@@ -15,7 +15,8 @@ class CreateFeedback extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+            $table->boolean('isUser');
+            $table->integer('user_id')->unsigned()->nullable();
             $table->string('Quality');
             $table->string('ServiceEfficiency');
             $table->string('cleanliness');
@@ -23,6 +24,11 @@ class CreateFeedback extends Migration
             $table->string('valueformoney');
             $table->string('staffattitude');
             $table->text('additionalcomment');
+            $table->timestamps();
+            $table->foreign('user_id')
+                    ->references('id')
+                    ->on('users')
+                    ->onDelete('Cascade');
         });
     }
 

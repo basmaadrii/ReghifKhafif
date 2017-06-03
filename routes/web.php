@@ -13,6 +13,7 @@ Route::post('/partnership', 'PartnershipController@store');
 
 Route::get('/feedback', 'FeedbackController@display');
 Route::post('/feedback', 'FeedbackController@store');
+Route::get('/feedbacks', 'FeedbackController@showFeedbacks');
 
 Route::get('/post', 'PostController@display');
 Route::post('/post', 'PostController@store');
