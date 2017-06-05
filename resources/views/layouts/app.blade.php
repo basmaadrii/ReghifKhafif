@@ -78,15 +78,21 @@
             </div>
         </nav>
 
-            <ul class="nav nav-tabs">
-          <li class="active"><a href="/home">Home</a></li>
-          <li>
-            <a href="/menu">Menu</a>
-          </li>
-          <li><a href="/newsfeed">News Feed</a></li>
-          <li><a href="/feedback">Feedbacks</a></li>
-          <li><a href="/partnership">Partnership</a></li>
-          <li><a href="/post">Post</a></li>
+        <ul class="nav nav-tabs">
+        <li class="active"><a href="/home">Home</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/newsfeed">News Feed</a></li>
+        <li><a href="/post">Post</a></li>
+        @if (Auth::guest() || !Auth::user()->admin)
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/partnership">Be Our Partner</a></li>
+        @endif
+        @if(!Auth::guest())
+            @if(Auth::user()->admin)
+                <li><a href="/feedbacks">Given Feedbacks</a></li>
+                <li><a href="/partnership/forms">Partnership Forms</a></li>
+            @endif
+        @endif
         </ul>
         </br>
         </br>

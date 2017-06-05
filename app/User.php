@@ -31,6 +31,14 @@ class User extends Authenticatable
         return $this->hasMany('App\Post');
     }
 
+    public function feedbacks(){
+        return $this->hasMany('App\Feedback');
+    }
+
+    public function partnershipforms(){
+        return $this->hasMany('App\Partner');
+    }
+
     public function isAdmin(){
         return $this->admin;
     }

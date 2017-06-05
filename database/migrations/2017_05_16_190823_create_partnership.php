@@ -21,8 +21,13 @@ class CreatePartnership extends Migration
             $table->string('phonenumber')->nullable();
             $table->text('offer');
             $table->text('additionalInfo')->nullable();
-            $table->binary('documentaion');
+            $table->string('documentation');
+            $table->integer('user_id')->unsigned();
             $table->timestamps();
+            $table->foreign('user_id')
+                  ->references('id')
+                  ->on('users')
+                  ->onDelete('Cascade');
         });
     }
 

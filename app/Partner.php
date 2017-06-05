@@ -15,6 +15,11 @@ class Partner extends Model
     	'address',
     	'phonenumber',
     	'offer',
-    	'additionalInfo'
+    	'additionalInfo',
+    	'documentation',
     ];
+
+    public function user(){
+    	return $this->belongsTo('App\User');
+    }
 }

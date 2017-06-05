@@ -10,6 +10,8 @@ Route::get('/home', 'HomeController@index');
 
 Route::get('/partnership', 'PartnershipController@display');
 Route::post('/partnership', 'PartnershipController@store');
+Route::get('/partnership/forms', 'PartnershipController@showPartnershipForms');
+Route::get('/partnership/download/{id}', 'PartnershipController@downloadDocument');
 
 Route::get('/feedback', 'FeedbackController@display');
 Route::post('/feedback', 'FeedbackController@store');

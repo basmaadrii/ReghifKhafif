@@ -12,7 +12,7 @@
 				<br/>
 				<div class="panel-body">
 
-					{!! Form::open(['url' => '/partnership', 'class' => 'form-horizontal']) !!}
+					{!! Form::open(['url' => '/partnership', 'class' => 'form-horizontal', 'files' => true]) !!}
 
 	                    {{ csrf_field() }}
 
